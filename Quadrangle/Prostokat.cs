@@ -21,6 +21,13 @@ namespace Quadrangle
             int pole = a * b;
             return pole;
         }
-
+        public Prostokat Wymiary(int argA, int argB)
+        {
+            a = argA;
+            b = argB;
+            c = argA;
+            d = argB;
+            return 
+        }
     }
 }

@@ -15,7 +15,7 @@ namespace Quadrangle
             int a = int.Parse(Console.ReadLine());
             int b = int.Parse(Console.ReadLine());
             Prostokat prostokat = new Prostokat(a, b);
-            Console.WriteLine(prostokat.a +", " + prostokat.b + ", " + prostokat.c + ", " + prostokat.d);
+            //Console.WriteLine(prostokat.a +", " + prostokat.b + ", " + prostokat.c + ", " + prostokat.d);
             Console.WriteLine(prostokat.Pole());
             Console.ReadLine();
         }
