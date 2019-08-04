@@ -21,6 +21,6 @@ namespace Quadrangle
             int pole = a * b;
             return pole;
         }
-        public wymiary
+
     }
 }
