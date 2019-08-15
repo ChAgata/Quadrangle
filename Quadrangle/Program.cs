@@ -10,26 +10,17 @@ namespace Quadrangle
     {
         static void Main(string[] args)
         {
-            int[,] tablicaCzworokatow = new int[5, 4]
+            Czworokat[] tablicaCzworokatow = new Czworokat[]
             {
-                {2,3,2,3 },
-                {3,8,3,8 },
-                {5,5,5,5 },
-                {9,5,9,5 },
-                {2,2,2,2 }
+                new Kwadrat(5),
+                new Prostokat(5,3),
+                new Kwadrat(7),
+                new Prostokat(1,5),
+                new Prostokat(2,3)
             };
-            for(int i = 0; i<=4; i++)
+            foreach(var item in tablicaCzworokatow)
             {
-                if (tablicaCzworokatow[i, 0] != tablicaCzworokatow[i, 1])
-                {
-                    Prostokat prst = new Prostokat(tablicaCzworokatow[i, 0], tablicaCzworokatow[i, 1]);
-                    Console.WriteLine(prst.Pole());
-                }
-                else
-                {
-                    Kwadrat kwdr = new Kwadrat(tablicaCzworokatow[i, 0]);
-                    Console.WriteLine(kwdr.Pole());
-                }
+                Console.WriteLine(item.GetType().Name + "Pole: " + item.Pole()); 
             }
 
 
